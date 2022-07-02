@@ -1,0 +1,29 @@
+@import '../../sass/variables.scss';
+.card {
+    padding: 40px;
+    -webkit-box-shadow: 0px 0px 20px 0px rgba(138, 138, 138, 1);
+    -moz-box-shadow: 0px 0px 20px 0px rgba(138, 138, 138, 1);
+    box-shadow: 0px 0px 20px 0px rgba(138, 138, 138, 1);
+}
+.card-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+.container-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    background-color: $brand;
+    color: white;
+}
+.btn:hover{
+    background-color: $brand-hover; 
+}
+.card-link:hover{
+    color: $brand-hover;
+}
