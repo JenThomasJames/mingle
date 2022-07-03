@@ -1,6 +1,7 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { GlobalVariables } from 'src/app/global/variables';
 import { User } from 'src/app/model/user.model';
@@ -18,14 +19,14 @@ export class LoginComponent implements OnInit {
     password: new FormControl('')
   });
 
-  constructor(private loginService: LoginService) { }
+  constructor(private loginService: LoginService, private router: Router) { }
 
   ngOnInit(): void {
   }
 
   onLogin() : void{
     this.loginService.authenticateUser(this.loginForm.value.username, this.loginForm.value.password).subscribe(data => {
-      alert("Authenticated!");
+      this.router.navigate(['/home']);
     }, error => {
       alert("Login Failed. Please check your credentials");
     });
