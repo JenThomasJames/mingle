@@ -5,15 +5,15 @@
             <h1 class="card-title">Welcome Back!</h1>
         </div>
         <div class="card-body">
-            <form action="/action_page.php">
+            <form action="/action_page.php" [formGroup]="loginForm">
                 <div class="mb-3 mt-3">
-                    <input type="text" class="form-control" placeholder="Username">
+                    <input type="text" class="form-control" placeholder="Username" formControlName="username">
                 </div>
                 <div class="mb-3">
-                    <input type="password" class="form-control" placeholder="Password">
+                    <input type="password" class="form-control" placeholder="Password" formControlName="password">
                 </div>
                 <div class="d-grid">
-                    <button type="submit" class="btn">Submit</button>
+                    <button type="button" class="btn" (click)="onLogin()">Submit</button>
                 </div>
             </form>
             <div class="container-fluid">
