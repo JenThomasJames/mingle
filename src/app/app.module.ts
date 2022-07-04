@@ -10,6 +10,7 @@ import { GlobalVariables } from './global/variables';
 import { HomeComponent } from './components/home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BrandComponent } from './components/brand/brand.component';
+import { UserActivitiesComponent } from './components/user-activities/user-activities.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { BrandComponent } from './components/brand/brand.component';
     HomeComponent,
     HeaderComponent,
     BrandComponent,
+    UserActivitiesComponent,
   ],
   imports: [
     BrowserModule,

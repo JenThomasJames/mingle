@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+}
+.my-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    border-radius: 20px;
+    width: 400px;
+}
+.gr-haikus{
+    background: linear-gradient(to right, #fd736c9a, #ff9068d2);
+    color: rgb(121, 121, 121);
+}
+.gr-leaf{
+    background: linear-gradient(to right, #76b8529a, #8DC26FD2);
+    color: rgb(121, 121, 121);
+}
