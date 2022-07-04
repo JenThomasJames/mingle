@@ -8,12 +8,16 @@ import { LoginComponent } from './components/login/login.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { GlobalVariables } from './global/variables';
 import { HomeComponent } from './components/home/home.component';
+import { HeaderComponent } from './components/header/header.component';
+import { BrandComponent } from './components/brand/brand.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     HomeComponent,
+    HeaderComponent,
+    BrandComponent,
   ],
   imports: [
     BrowserModule,
